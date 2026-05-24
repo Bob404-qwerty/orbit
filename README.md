@@ -1,8 +1,8 @@
-# 🚀 OrbitTech — Taller Git & GitHub
+#  OrbitTech — Taller Git & GitHub
 
 Empresa prestadora de servicios tecnológicos desarrollada con **Astro** y **Tailwind CSS**.
 
-## 👥 Integrantes
+##  Integrantes
 
 | Integrante | Rol | Historias |
 |------------|-----|-----------|
@@ -10,7 +10,7 @@ Empresa prestadora de servicios tecnológicos desarrollada con **Astro** y **Tai
 | Persona 2 | Desarrollador A | HU-02, HU-03 |
 | Persona 3 | Desarrollador B | HU-04, HU-05 |
 
-## 📋 Historias de Usuario
+##  Historias de Usuario
 
 - **HU-01** — Página de inicio
 - **HU-02** — Menú de navegación
