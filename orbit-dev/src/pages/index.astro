@@ -1,0 +1,149 @@
+---
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>OrbitTech</title>
+
+    <meta
+      name="description"
+      content="Desarrollo web, aplicaciones y soluciones digitales."
+    />
+
+  </head>
+
+  <body class="bg-dark-900 text-white antialiased">
+
+    <Navbar />
+
+    <!-- HERO -->
+
+    <section class="relative overflow-hidden px-6 pt-40 pb-32">
+
+      <!-- Glow -->
+
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <!-- Grid -->
+
+      <div
+        class="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style="background-image:
+        linear-gradient(rgba(255,255,255,1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px);
+        background-size: 72px 72px;"
+      ></div>
+
+      <div class="max-w-6xl mx-auto relative z-10">
+
+        <div class="max-w-3xl">
+
+          <span class="inline-flex items-center gap-2 text-sm text-brand-400 mb-6">
+
+            <span class="w-2 h-2 rounded-full bg-brand-400"></span>
+
+            OrbitTech
+
+          </span>
+
+          <h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-[0.95]">
+
+            Desarrollo digital
+            para empresas modernas.
+
+          </h1>
+
+          <p class="text-zinc-400 text-lg leading-relaxed mt-8 max-w-2xl">
+
+            Creamos aplicaciones, plataformas y soluciones web
+            enfocadas en rendimiento, escalabilidad y experiencia de usuario.
+
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-10">
+
+            <a
+              href="#contacto"
+              class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors"
+            >
+              Contactar
+            </a>
+
+            <a
+              href="#servicios"
+              class="border border-white/10 hover:border-white/20 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors"
+            >
+              Ver servicios
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- NOSOTROS -->
+
+    <section
+      id="nosotros"
+      class="px-6 py-24 border-t border-white/5"
+    >
+
+      <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
+
+        <div>
+
+          <span class="text-sm text-brand-400 block mb-5">
+            Nosotros
+          </span>
+
+          <h2 class="text-4xl md:text-5xl font-semibold tracking-tight leading-tight max-w-xl">
+
+            Un equipo enfocado en construir
+            soluciones modernas y funcionales.
+
+          </h2>
+
+        </div>
+
+        <div class="space-y-6 text-zinc-400 leading-relaxed text-lg">
+
+          <p>
+            Trabajamos en proyectos web y aplicaciones modernas
+            utilizando tecnologías actuales y procesos de desarrollo organizados.
+          </p>
+
+          <p>
+            Nuestro enfoque está en crear productos funcionales,
+            escalables y preparados para crecer a futuro.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <Servicios />
+
+    <Contacto />
+
+    <Footer />
+
+  </body>
+
+</html>
