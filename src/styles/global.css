@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
+
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable at-rule-no-unknown */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply border-white/5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.dark.700") transparent;
+  }
+
+  body {
+    @apply bg-dark-900 text-white antialiased;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: theme("colors.brand.500 / 0.3");
+    color: theme("colors.white");
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: theme("colors.dark.700");
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: theme("colors.zinc.600");
+  }
+}
+
+@layer components {
+  .glow {
+    pointer-events: none;
+    position: absolute;
+    /* stylelint-disable at-rule-no-unknown */
+    @apply w-[700px] h-[350px];
+    @apply bg-brand-500/10 blur-[120px] rounded-full;
+    /* stylelint-enable at-rule-no-unknown */
+  }
+
+  .grid-bg {
+    @apply pointer-events-none absolute inset-0 opacity-[0.03];
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+
+  .section-title {
+    @apply text-sm text-brand-400 block mb-5;
+  }
+
+  .heading-xl {
+    @apply text-5xl md:text-7xl font-semibold tracking-tight leading-[0.95];
+  }
+
+  .heading-lg {
+    @apply text-4xl md:text-5xl font-semibold tracking-tight leading-tight;
+  }
+
+  .body-text {
+    @apply text-zinc-400 text-lg leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors;
+  }
+
+  .btn-secondary {
+    @apply border border-white/10 hover:border-white/20 text-white px-6 py-3 rounded-xl text-sm font-medium transition-colors;
+  }
+
+  .link-nav {
+    @apply text-sm text-zinc-400 hover:text-white transition-colors;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 1) 1px, transparent 1px);
+    background-size: 72px 72px;
+  }
+}
